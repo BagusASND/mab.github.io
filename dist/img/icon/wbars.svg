@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+	<title>bars</title>
+	<defs>
+		<image  width="40" height="28" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAcBAMAAADhO+DlAAAAAXNSR0IB2cksfwAAACFQTFRF////////////////////////////////////////////f4DHbwAAAAt0Uk5TcL9//4DAABBAIN8jA+ukAAAANklEQVR4nGNgFMQAQgzGWACDaygGCGBIwwKGjGBFBwboZFiM6XUr7IIzMLW3D0ZvEi9IWWIAAK9hxTcO1uMqAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Background" href="#img1" x="0" y="6" />
+</svg>

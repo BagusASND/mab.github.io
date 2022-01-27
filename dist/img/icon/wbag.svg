@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+	<title>bag</title>
+	<defs>
+		<image  width="38" height="39" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAnBAMAAACRTyc4AAAAAXNSR0IB2cksfwAAAC1QTFRF////////////////////////////////////////////////////////////oNIwBQAAAA90Uk5TADCMzPWdfP9qQg5XH7fiaVQe/QAAAUtJREFUeJxjYIAARmUXUwEGVJBSXl7uhirEUa65Sqg8AUVMpAJIbHdEEQsPABJMpchCXO4g83lKFiCJcRaDqesbkMTYisCUugKSGG81mNoegCxWCaamX4BboFeeXBj37t27p+LW5Y8g1vCWlzcXmgP9UXz8hXs5ROn2hwx8hWvOnDlz4PgDBjmIyeENDO0Qt4QXMbBB3G0+geF6OThM3EugLuVyWcCgXgc2+noxA1f5AqgfVuiAdRzLAusCBhOKz0GmMzCwVqCItYP8wlyIIjbdAEgcd0ARY6mCSaAFR3oAihhTGQNaQEKd8Rw1WhnrgJFQx4AK3A8wcNaiiQHNgkYFAqgnwKICAbZfAAYnmtjxBwziD9DE+GpASlEB0DCgkagAaOn1CWhi3LUMzw+giQE94b4AXayE4XoUmtjSWgaRcnTgyMB4BU3IVwAAeVll7rAG15MAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Background" href="#img1" x="1" y="1" />
+</svg>

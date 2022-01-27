@@ -1,0 +1,173 @@
+.bg-primary {background-color: #FB9257 !important;}
+.bg-muted {background-color: #f9f9f9;}
+.bg-teal-blue {background-color: #f3fafd;}
+
+.text-primary {color: #444444 !important;}
+.text-secondary {color: #FB9257 !important;}
+.text-muted {color: #A4A1A1 !important;}
+
+.text-xs{font-size: 10px;}
+.text-sm{font-size: 12px;}
+.text-md{font-size: 14px;}
+.text-lg{font-size: 16px;}
+.text-xlg{font-size: 20px;}
+
+.fw2 {font-weight: 200;}
+.fw3 {font-weight: 300;}
+.fw4 {font-weight: 400;}
+.fw5 {font-weight: 500;}
+.fw6 {font-weight: 600;}
+.fw7 {font-weight: 700;}
+.fw8 {font-weight: 800;}
+.fw9 {font-weight: 900;}
+
+.rounded-sm {border-radius: 4px !important;}
+.rounded {border-radius: 6px !important;}
+.rounded-lg {border-radius: 10px !important;}
+
+hr {background-color: #D2D2D2;}
+.h-20 {height: 20px;}
+
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #ced4da;
+}
+
+.btn {border-radius: 6px;}
+.btn:focus {
+    box-shadow: none;
+    outline: none;
+}
+.btn-primary {
+    background-color: #FB9257;
+    border-color: #FB9257;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #FB9257;
+    border-color: #FB9257;
+}
+.btn-primary-outline {
+    background: transparent;
+    color: #FB9257;
+    border-color: #FB9257;
+}
+.btn-primary-ouline:hover {
+    color: #FB9257;
+}
+.btn-oos {
+    background-color: #EBEBEB;
+    color: #A4A1A1;
+    pointer-events: none;
+    cursor: default;
+}
+.btn-wa {
+    background-color: #33D917;
+    color: #ffffff;
+}
+
+/* Alert */
+.alert {
+    border: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 12px 15px 12px 40px;
+}
+.alert-info {
+    background-color: #E3F8FE;
+    font-size: 12px;
+    color: #407BA6;
+    position: relative;
+}
+.alert-info::before {
+    content: 'i';
+    width: 36px;
+    padding: 5px 0;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #CBE1E8;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* icon */
+.icofont-facebook.default {color: #1A77F2;}
+.icofont-twitter.default {color: #1DA1F1;}
+.icofont-instagram.default {
+    background: -webkit-linear-gradient(#555ACE, #BD338E, #FEC664);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.icofont-brand-whatsapp.default {color: #23D366;}
+
+.cursor-pointer {cursor: pointer;}
+
+.disc-label {
+    background: linear-gradient(to right, #FB9257, #FF6565);
+    border-radius: 3px 0 0 3px;
+    padding: 2px 17px 2px 7px;
+    color: #ffffff;
+    font-size: 8px;
+    font-weight: 600;
+    position: relative;
+}
+.disc-label::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 7.5px solid white;
+    border-top: 7.5px solid transparent;
+    border-bottom: 7.5px solid transparent;
+}
+
+.horizontal-scrolling {
+    overflow: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+.horizontal-scrolling::-webkit-scrollbar {
+    display: none;
+}
+
+.default-tab .nav-link {
+    border: 0;
+    color: #A4A1A1;
+    font-weight: 700;
+}
+.default-tab .nav-link.active {
+    border-bottom: solid 3px #FB9257;
+    color: #FB9257;
+}
+
+.filter-sort li i {
+    display: none;
+    color: #2d99b3;
+}
+.filter-sort li.active i {
+    display: block;
+}
+
+/* Pagination */
+.pagination .page-item .page-link {
+    width: 35px;
+    height: 35px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 5px;
+    color: #FB9257;
+}
+.pagination .page-item .page-link.divider {
+    border: 0;
+    padding-top: 13px;
+    width: 15px;
+}
