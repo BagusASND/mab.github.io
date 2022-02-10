@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Checkout | MAB.Clo</title>
+    <link rel="icon" type="image/x-icon" href="dist/img/logo-primary.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="dist/css/components.css">
+    <link rel="stylesheet" href="dist/css/element.css">
+
+    <!-- Plugin -->
+    <link rel="stylesheet" type="text/css" href="dist/plugin/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="dist/plugin/slick/slick-theme.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/plugin/icofont/icofont.min.css">
+
+  </head>
+  <body>
+    <div class="loading-state">
+        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+    <header class="d-none d-sm-none d-md-block">
+        <div class="body-heading">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-4">
+                        <a href="/">
+                            <img src="dist/img/logo-primary.png" class="logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="d-md-none bg-white">
+        <div class="container">
+            <div class="body-heading">
+                <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center">
+                        <a href="/" class="btn btn-sm position-relative text-xlg py-0 ps-0">
+                            <i class="icofont-rounded-left"></i>
+                        </a>
+                        <span class="text-xlg">Checkout</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="container">
+            <div class="row pt-3 pt-sm-3 pt-md-0">
+                <div class="col-12 col-sm-12 col-md-8">
+                    <h3 class="d-none d-sm-none d-md-block mb-5">Checkout</h3>
+                    <p class="text-lg fw6 mb-0">Alamat Pengiriman</p>
+                    <hr class="my-3" />
+                    <div class="row align-items-center">
+                        <div class="col-12 col-sm-12 col-md-9">
+                            <p class="mb-1">
+                                <span class="fw6">Bagus Arisandi</span>
+                                <span> - Alamat Rumah</span>
+                                <span class="label bg-primary text-xs rounded-sm px-3 py-1 fw5 ms-2">Utama</span>
+                            </p>
+                            <p class="mb-1">087844658832</p>
+                            <p class="text-muted mb-md-0">Jl. Ragil Kp Bojong Tengah No. 77, RT 005/006, Bantarsari, Rancabungur, Kab. Bogor, Jawa Barat 16310</p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3">
+                            <button class="btn btn-sm fw6 border w-100">Ganti Alamat</button>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-9 pt-3">
+                            <p class="fw6 text-sm mb-2">Tambah Catatan (optional) <i class="icofont-pencil-alt-2 ms-1"></i></p>
+                            <textarea class="form-control rounded text-sm"></textarea>
+                        </div>
+                    </div>
+                    <hr class="my-4" />
+                    <ul class="item-checkout list-unstyled mb-4">
+                        <li>
+                            <div class="d-flex justify-content-between">
+                                <img src="dist/assets/17f4545d-9f33-454b-bb31-92ae86062240.jpeg">
+                                <div class="row w-100">
+                                    <div class="col-12 col-sm-12 col-md-9">
+                                        <p class="mb-1">SKULL T-shirt short sleeve - Navy | All Size</p>
+                                        <p class="mb-1 text-sm text-muted">1 item (500 g)</p>
+                                        <p class="mb-0 fw6 text-sm">Rp 80.000</p>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-3 text-md-end text-lg fw6 pt-2 pt-sm-2 pt-md-0">Rp 80.000</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex justify-content-between">
+                                <img src="dist/assets/b4732221-79a4-4262-8e92-477aff2020af.jpeg">
+                                <div class="row w-100">
+                                    <div class="col-12 col-sm-12 col-md-9">
+                                        <p class="mb-1">OFFLINE T-shirt short sleeve - White | All size</p>
+                                        <p class="mb-1 text-sm text-muted">2 item (1 kg)</p>
+                                        <p class="mb-0 fw6 text-sm"><span class="text-muted text-decoration-line-through fw4 me-2">Rp 80.000</span> Rp 64.000</p>
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-3 text-md-end text-lg fw6 pt-2 pt-sm-2 pt-md-0">Rp 128.000</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-9">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchBox">
+                                <label class="form-check-label text-sm fw6" for="flexSwitchBox">
+                                    Tambah box + kartu ucapan
+                                </label>
+                                <i class="icofont-info-circle text-muted ms-1 cursor-pointer" data-bs-toggle="modal" data-bs-target="#giftInfo"></i>
+                            </div>
+                            <div class="form-gift mt-3 d-none">
+                                <p class="mb-0 fw6 text-sm">Isi kartu ucapan (optional)</p>
+                                <p class="mb-2 text-sm fw3 text-muted">Jika tidak diisi, maka akan dikirim tanpa kartu ucapan</p>
+                                <textarea class="form-control rounded text-sm"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3 text-lg fw6 text-md-end">
+                            <p id="giftCost" class="mb-0 mt-3 mt-sm-3 mt-md-0 d-none">Rp <span></span></p>
+                        </div>
+                    </div>
+                    <hr class="my-4" />
+                    <div class="alert alert-info">Kami memerlukan waktu untuk memverifikasi pembayaran setelah Anda melakukan konfirmasi. Barang akan dikirim setelah pembayaran terkonfirmasi. Apabila pembayaran terkonfirmasi di atas pukul <span class="fw7">14:00</span>, pengiriman akan dilakukan keesokan hari.</div>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-4">
+                            <p class="mb-2 fw6 text-sm">Pilih Pengiriman</p>
+                            <div class="dropdown shipping-list mb-3">
+                                <button class="btn btn-primary btn-sm dropdown-toggle" type="button" id="shippingBtn" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>Pilih</span> <i class="icofont-rounded-down"></i>
+                                </button>
+                                <ul class="dropdown-menu rounded-lg shadow border-0 px-3" aria-labelledby="shippingBtn">
+                                    <li id="shipping-1">
+                                    <div class="d-flex justify-content-between text-sm">
+                                        <span class="fw5">JNE OKE</span>
+                                        <span>Rp 9.000</span>
+                                    </div>
+                                    <span class="text-xs text-muted">Estimasi pengiriman 2-3 hari</span>
+                                    </li>
+                                    <li id="shipping-2">
+                                        <div class="d-flex justify-content-between text-sm">
+                                            <span class="fw5">JNE REG</span>
+                                            <span>Rp 10.000</span>
+                                        </div>
+                                        <span class="text-xs text-muted">Estimasi pengiriman 1-2 hari</span>
+                                    </li>
+                                    <li id="shipping-3">
+                                        <div class="d-flex justify-content-between text-sm">
+                                            <span class="fw5">JNE YES</span>
+                                            <span>Rp 19.000</span>
+                                        </div>
+                                        <span class="text-xs text-muted">Estimasi pengiriman 1 hari</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4">
+                            <div id="shipping-selected" class="d-none">
+                                <p class="mb-2 fw6 text-sm">Pengiriman Dipilih</p>
+                                <p class="mb-0 text-sm text-muted ship-service"></p>
+                                <p class="mb-0 text-sm text-muted ship-est">Estimasi pengiriman <span></span></p>
+                                <p class="mb-1 text-sm text-muted ship-weight">Berat total <span></span></p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 text-md-end fw6 text-lg">
+                            <span id="shipping-cost" class="d-none">Rp <span></span></span>
+                        </div>
+                    </div>
+                    <hr class="my-4" />
+                    <div class="row">
+                        <div class="col-6 text-lg fw6">Subtotal</div>
+                        <div class="col-6 text-lg fw6 text-end">Rp <span id="subtotal">233.000</span></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                    <div class="card rounded-lg border-0 shadow-sm mt-4 mt-sm-4 mt-md-0">
+                        <div class="p-3 pb-0">
+                            <p class="text-lg fw6 d-none d-sm-none d-md-block">Gunakan kode voucher</p>
+                            <p class="fw6 d-md-none">Gunakan kode voucher</p>
+                            <div class="input-group mb-1 border rounded overflow-hidden p-1">
+                                <input type="text" class="form-control text-md border-0 fw6" value="REBRANDING2021">
+                                <span class="input-group-text p-0 bg-transparent border-0">
+                                    <button type="button" class="btn btn-primary btn-sm px-3">Pakai</button>
+                                </span>
+                            </div>
+                            <span class="text-tertiary text-sm">Voucher berhasil dipakai</span>
+                        </div>
+                        <hr />
+                        <div class="p-3 pt-0">
+                            <p class="text-lg fw6 d-none d-sm-none d-md-block">Ringkasan pembayaran</p>
+                            <p class="fw6 d-md-none">Ringkasan pembayaran</p>
+                            <div class="row mb-3">
+                                <div class="col-6">Total harga belanja</div>
+                                <div class="col-6 text-end">Rp 208.000</div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-6">Kode unik <i class="icofont-info-circle text-muted ms-1 cursor-pointer" data-bs-toggle="modal" data-bs-target="#uniqCodeInfo"></i></div>
+                                <div class="col-6 text-end">Rp 256</div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-6">Box + kartu ucapan</div>
+                                <div class="col-6 text-end">Rp 5.000</div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-6">Biaya Pengiriman</div>
+                                <div class="col-6 text-end">Rp 20.000</div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-6">Voucher</div>
+                                <div class="col-6 text-end">-Rp 30.000</div>
+                            </div>
+                            <hr />
+                            <div class="row mb-3">
+                                <div class="col-6 text-lg fw6">Total Tagihan</div>
+                                <div class="col-6 text-lg fw6 text-end">Rp 203.256</div>
+                            </div>
+                            <a id="orderBtn" href="order.html" class="btn btn-primary btn-sm w-100">Lanjutkan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <hr class="my-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <a href="/">
+                            <img src="dist/img/logo-primary.png" style="height: 30px;">
+                        </a>
+                        <span class="text-sm ms-3">&copy; 2022, MABClo.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gift Info -->
+    <div class="modal fade fade-top bottom-fade" id="giftInfo" tabindex="-1" aria-labelledby="giftInfoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 rounded-lg">
+                <div class="modal-header border-0">
+                    <h6 class="modal-title">
+                        <span>Tambah box & kartu ucapan</span>
+                    </h6>
+                    <button type="button" class="btn-close text-xs" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-sm pt-0">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-3">
+                            <img src="dist/img/gift-ilus.svg" class="w-100">
+                        </div>
+                        <div class="col-9">Kirim paket dalam bentuk bingkisan sebagai hadiah, bisa juga ditambah dengan kartu ucapan</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kode Unik -->
+    <div class="modal fade fade-top bottom-fade" id="uniqCodeInfo" tabindex="-1" aria-labelledby="uniqCodeInfoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 rounded-lg">
+                <div class="modal-header border-0">
+                    <h6 class="modal-title">
+                        <span>Kode Unik</span>
+                    </h6>
+                    <button type="button" class="btn-close text-xs" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-sm pt-0">
+                    <p class="mb-0"><span class="fw7">3 digit terakhir</span> yang ditambahkan pada nominal pembayaran untuk memudahkan kami melakukan verifikasi pembayaran kamu. Pastikan melakukan pembayaran tepat sesuai total tagihan hingga <span class="fw7">3 digit terakhir</span>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="dist/js/jquery-3.2.1.min.js"></script>
+    <script src="dist/plugin/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="dist/js/mab.js" type="text/javascript"></script>
+
+    <script>
+        $('#flexSwitchBox').change(function(){
+            if($(this).is(":checked")) {
+                $('.form-gift').removeClass('d-none');
+                $('#giftCost').removeClass('d-none');
+                $('#giftCost span').text('5.000');
+            } else {
+                $('.form-gift').addClass('d-none');
+                $('#giftCost').addClass('d-none');
+                $('#giftCost span').text('');
+            }
+        });
+
+        if($('#shipping-cost span').text('')) {
+            $('#orderBtn').addClass('disabled');
+        }
+        $('#shipping-1').click(function(){
+            $('#shippingBtn span').text('JNE OKE');
+            $('#shipping-selected').removeClass('d-none');
+            $('#shipping-selected .ship-service').text('JNE OKE');
+            $('#shipping-selected .ship-est span').text('2-3 hari');
+            $('#shipping-selected .ship-weight span').text('1,5 kg (2 kg)');
+            $('#shipping-cost').removeClass('d-none');
+            $('#shipping-cost span').text('18.000');
+            $('#orderBtn').removeClass('disabled');
+        });
+        $('#shipping-2').click(function(){
+            $('#shippingBtn span').text('JNE REG');
+            $('#shipping-selected').removeClass('d-none');
+            $('#shipping-selected .ship-service').text('JNE REG');
+            $('#shipping-selected .ship-est span').text('1-2 hari');
+            $('#shipping-selected .ship-weight span').text('1,5 kg (2 kg)');
+            $('#shipping-cost').removeClass('d-none');
+            $('#shipping-cost span').text('20.000');
+            $('#orderBtn').removeClass('disabled');
+        });
+        $('#shipping-3').click(function(){
+            $('#shippingBtn span').text('JNE YES');
+            $('#shipping-selected').removeClass('d-none');
+            $('#shipping-selected .ship-service').text('JNE YES');
+            $('#shipping-selected .ship-est span').text('1 hari');
+            $('#shipping-selected .ship-weight span').text('1,5 kg (2 kg)');
+            $('#shipping-cost').removeClass('d-none');
+            $('#shipping-cost span').text('38.000');
+            $('#orderBtn').removeClass('disabled');
+        });
+    </script>
+  </body>
+</html>

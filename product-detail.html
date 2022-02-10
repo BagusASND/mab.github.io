@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>OFFLINE T-shirt short sleeve - White | MAB.Clo</title>
     <link rel="icon" type="image/x-icon" href="dist/img/logo-primary.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -317,8 +317,29 @@
                         </div>
                         <div class="row align-items-center mt-3">
                             <div class="col-6 border-end">
-                                <button type="button" class="btn btn-primary-outline w-100 mb-2">Tambah ke Keranjang</button>
+                                <button type="button" class="btn btn-primary-outline w-100 mb-2" id="CartToastBtn">Tambah ke Keranjang</button>
                                 <button type="button" class="btn btn-primary w-100">Beli Sekarang</button>
+                            </div>
+                            <div class="position-fixed bottom-0 start-50 translate-middle-x p-3" style="z-index: 11">
+                                <div id="CartToast" class="toast cart-toast border-0 start-50 translate-middle-x rounded shadow position-relative" role="alert" aria-live="assertive" aria-atomic="true">
+                                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close">
+                                      <i class="icofont-close"></i>
+                                  </button>
+                                  <div class="toast-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div class="card">
+                                                <img src="dist/img/icon/bag.png">
+                                            </div>
+                                            <p class="text-white text-sm mb-0">
+                                                <span class="fw7">OFFLINE T-shirt short sleeve - White</span>
+                                                <span class="fw3">Berhasil ditambahkan ke keranjang!</span>
+                                            </p>
+                                        </div>
+                                        <button type="button" class="btn text-sm fw6 p-0" data-bs-toggle="modal" data-bs-target="#cartProduct">Lihat Keranjang</button>
+                                    </div>
+                                  </div>
+                                </div>
                             </div>
                             <div class="col-6">
                                 <p class="text-sm text-muted text-center mb-2">Beli via Whatsapp untuk pembelian tanpa login</p>
@@ -548,10 +569,18 @@
             <a href="" class="btn btn-wa me-2">
                 <i class="icofont-brand-whatsapp"></i>
             </a>
-            <button type="button" class="btn btn-primary-outline w-100 me-1 text-md"><i class="icofont-plus"></i> Keranjang</button>
+            <button type="button" class="btn btn-primary-outline w-100 me-1 text-md" id="mCartToast"><i class="icofont-plus"></i> Keranjang</button>
             <a href="" class="btn btn-primary w-100 ms-1 text-md pt-2">Beli Sekarang</a>
         </div>
     </section>
+    <div class="position-fixed bottom-0 start-50 translate-middle p-3" style="z-index: 11">
+        <div id="mToast" class="toast align-items-center bg-teal-blue border-0 rounded" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+              <div class="toast-body text-sm">Berhasil ditambahkan ke keranjang!</div>
+              <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="container text-white">
@@ -801,7 +830,7 @@
                             <button type="button" class="btn btn-primary-outline">Belanja Lagi</button>
                         </div>
                         <div class="col-6 ps-1 d-grid">
-                            <button type="button" class="btn btn-primary">Checkout</button>
+                            <a href="checkout.html" class="btn btn-primary">Checkout</a>
                         </div>
                     </div>
                 </div>
@@ -812,7 +841,7 @@
                             <p class="mb-0 fw7 text-lg">Rp 208.000</p>
                         </div>
                         <div class="col-6 d-grid">
-                            <a href="checkout" type="button" class="btn btn-primary rounded">Checkout</a>
+                            <a href="checkout.html" type="button" class="btn btn-primary rounded">Checkout</a>
                         </div>
                     </div>
                 </div>
@@ -1134,6 +1163,26 @@
             centerMode: true,
             focusOnSelect: true
         });
+
+        var toastTrigger = document.getElementById('CartToastBtn')
+        var toastLiveExample = document.getElementById('CartToast')
+        if (toastTrigger) {
+            toastTrigger.addEventListener('click', function () {
+                var toast = new bootstrap.Toast(toastLiveExample)
+
+                toast.show()
+            })
+        }
+
+        var toastMobileTrigger = document.getElementById('mCartToast')
+        var toastMobile = document.getElementById('mToast')
+        if (toastMobileTrigger) {
+            toastMobileTrigger.addEventListener('click', function () {
+                var toast = new bootstrap.Toast(toastMobile)
+
+                toast.show()
+            })
+        }
     </script>
   </body>
 </html>
