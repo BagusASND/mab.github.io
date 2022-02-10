@@ -5,6 +5,7 @@
 .text-primary {color: #444444 !important;}
 .text-secondary {color: #FB9257 !important;}
 .text-muted {color: #A4A1A1 !important;}
+.text-tertiary {color: #61B0C9 !important;}
 
 .text-xs{font-size: 10px;}
 .text-sm{font-size: 12px;}
@@ -170,4 +171,14 @@ hr {background-color: #D2D2D2;}
     border: 0;
     padding-top: 13px;
     width: 15px;
+}
+
+/* Form */
+.form-check-input:checked {
+    background-color: #FB9257;
+    border-color: #FB9257;
+}
+.form-check-input:focus {
+    box-shadow: none !important;
+    outline: none !important;
 }

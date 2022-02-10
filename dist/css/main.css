@@ -7,6 +7,12 @@ body {
     background-color: #FBCD57;}
 .banner-fs img {height: 70px;}
 
+a.disabled {
+    pointer-events: none;
+    background-color: #dddddd !important;
+    border-color: #dddddd !important;
+}
+
 .loading-state {
     position: fixed;
     width: 100%;
